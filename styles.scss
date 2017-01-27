@@ -1,0 +1,98 @@
+---
+---
+@import "bourbon";
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+html, body {
+  margin:0;
+  padding:0;
+}
+
+body {
+  color: #444;
+  color: hsla(0,0%,20%,.9);
+  font: 18px/1.5 Lusitana, Georgia, serif;
+}
+
+h1 {
+  font-weight:normal;
+}
+
+h2,h3 {
+  * + & {
+    margin-top: 2rem;
+  }
+
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+a {
+  &:link {
+    color: hsla(0,0%,50%,.9);
+  }
+  &:visited {
+    color: hsla(0,0%,75%,.9);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: hsla(0,0%,25%,.9);
+  }
+}
+
+#banner,
+#main {
+  @include display(flex);
+  @include align-items(flex-end);
+  padding: 1rem 20%;
+}
+
+#banner {
+  min-height: 70vh;
+  background: hsla(0,0%,96%,1);
+
+  h1 {
+    margin:0;
+    letter-spacing: -1px;
+    font-size: 5rem;
+  }
+  
+  a {
+    text-decoration:none;
+    color: hsla(0,0%,20%,.9);
+  }
+}
+
+#main {
+  font-family: Raleway, sans-serif;
+  font-weight: 200;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.audible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+

@@ -1,0 +1,30 @@
+# Global Site Information
+title: Advocacy By Design
+domain: http://advocacybydesign.org
+baseurl: ""
+
+# Jekyll Settings
+permalink: /:categories/:title/
+exclude: ['readme.md', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock']
+show_drafts: false
+gems: ['jekyll-feed', 'jekyll-sitemap', 'bourbon']
+feed:
+  path: atom.xml
+sass:
+  sass_dir: _sass
+  style: compressed
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      bodyclass: "post"
+
