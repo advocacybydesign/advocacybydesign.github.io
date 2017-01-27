@@ -7,7 +7,7 @@ baseurl: ""
 permalink: /:categories/:title/
 exclude: ['readme.md', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock']
 show_drafts: false
-gems: ['jekyll-feed', 'jekyll-sitemap', 'bourbon']
+gems: ['jekyll-feed', 'jekyll-sitemap']
 feed:
   path: atom.xml
 sass:

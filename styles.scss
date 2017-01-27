@@ -1,7 +1,5 @@
 ---
 ---
-@import "bourbon";
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -54,8 +52,8 @@ a {
 
 #banner,
 #main {
-  @include display(flex);
-  @include align-items(flex-end);
+  display:flex;
+  align-items: flex-end;
   padding: 1rem 20%;
 }
 
