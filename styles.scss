@@ -58,13 +58,14 @@ a {
 }
 
 #banner {
-  min-height: 70vh;
+  min-height: 67vh;
   background: hsla(0,0%,96%,1);
 
   h1 {
     margin:0;
     letter-spacing: -1px;
-    font-size: 5rem;
+    font-size: 4rem;
+    line-height: 1.1;
   }
   
   a {
