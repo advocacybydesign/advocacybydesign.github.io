@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>{{ site.title }}</title>
-<link href="https://fonts.googleapis.com/css?family=Lusitana|Raleway" rel="stylesheet">
+<script src="https://use.typekit.net/iju8ynd.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+
+<body class="{{ page.title | slugify }}">
 <a href="#main" class="audible">Skip to main content</a>
 <header role="banner" id="banner">
   <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
@@ -10,3 +13,4 @@
 <main role="main" id="main">
 {{ content }}
 </main>
+</body>

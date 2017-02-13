@@ -6,27 +6,48 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-}
 html, body {
   margin:0;
   padding:0;
 }
 
+html {
+  font-size: 100%;
+  background: hsla(0,0%,97%,1);
+}
+
 body {
   color: #444;
   color: hsla(0,0%,20%,.9);
-  font: 18px/1.5 Lusitana, Georgia, serif;
+  font: 20px/1.375 "calluna-sans", Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" 1,"dlig" 1,"clig" 1;
+  -ms-font-feature-settings: "liga" 1,"dlig" 1,"clig" 1;
+  -o-font-feature-settings: "liga" 1,"dlig" 1,"clig" 1;
+  -webkit-font-feature-settings: "liga" 1,"dlig" 1,"clig" 1;
+  font-feature-settings: "liga" 1,"dlig" 1,"clig" 1;
+}
+
+h1,h2,h3 {
+  font-family: "calluna", serif;
 }
 
 h1 {
-  font-weight:normal;
+  font-weight: bold;
 }
 
-h2,h3 {
+h2,h3,h4 {
+  margin-bottom:1rem;
+
   * + & {
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+
+  & + p,
+  & + ul,
+  & + ol {
+    margin-top:0 !important;
   }
 
 }
@@ -50,36 +71,55 @@ a {
   }
 }
 
+blockquote {
+  border-left: .25rem solid hsla(0,0%,25%,.125);
+  padding-left: 1rem;
+  margin:2rem 1rem;
+  color: hsla(0,0%,25%,.75);
+}
+
+hr {
+  border:none;
+  margin:3rem auto;
+  padding:0;
+  content: " ";
+  width: 3rem;
+  background: hsla(0,0%,25%,.75);
+  height: .25rem;
+
+  & + * {
+    margin-top:0;
+  }
+}
+
 #banner,
 #main {
-  display:flex;
-  align-items: flex-end;
-  padding: 1rem 20%;
+  padding: 1rem 2rem;
 }
 
 #banner {
-  min-height: 67vh;
-  background: hsla(0,0%,96%,1);
+  background: white;
+  background: rgba(255,255,255,.825);
+
+  .home & {
+    min-height: 67vh;
+    display:flex;
+    align-items: flex-end;
+  }
 
   h1 {
     margin:0;
     letter-spacing: -1px;
-    font-size: 4rem;
-    line-height: 1.1;
+    font-size: 1.25rem;
+    .home & {
+      font-size: 4rem;
+      line-height: 1.1;
+    }
   }
-  
+
   a {
     text-decoration:none;
     color: hsla(0,0%,20%,.9);
-  }
-}
-
-#main {
-  font-family: Raleway, sans-serif;
-  font-weight: 200;
-
-  p {
-    font-size: 1rem;
   }
 }
 
@@ -95,3 +135,20 @@ a {
   white-space: nowrap;
 }
 
+@media screen and (min-width: 600px) {
+
+#banner,
+#main {
+  padding: 1rem 16.5%;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+
+#banner,
+#main {
+  padding: 1rem 20%;
+}
+
+}
