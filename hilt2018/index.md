@@ -1,5 +1,5 @@
 ---
-layout: course
+layout: page
 title: HILT 2018
 subtitle: Schedule and Syllabus
 ---
