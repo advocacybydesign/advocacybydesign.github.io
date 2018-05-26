@@ -19,7 +19,7 @@ html {
 body {
   color: #444;
   color: hsla(0,0%,20%,.9);
-  font: 20px/1.375 "calluna-sans", Verdana, sans-serif;
+  font: 18px/1.375 "calluna-sans", Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" 1,"dlig" 1,"clig" 1;
@@ -53,8 +53,12 @@ h2,h3,h4 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: bold;
+}
+
+p,ul,ol,dl {
+    margin: 1rem 0;
 }
 
 a {
