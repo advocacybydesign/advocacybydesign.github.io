@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: page
 title: Sample Page
 ---
-
-# Sample Page
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Contineo me ab exemplis. An hoc usque quaque, aliter in vita? Teneo, inquit, finem illi videri nihil dolere. Non enim, si omnia non sequebatur, idcirco non erat ortus illinc. Duo Reges: constructio interrete. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Cur, nisi quod turpis oratio est? Conferam avum tuum Drusum cum C. Videsne, ut haec concinant? Quid ergo hoc loco intellegit honestum? Duo enim genera quae erant, fecit tria.
 
